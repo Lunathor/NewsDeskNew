@@ -10,7 +10,7 @@ from django.db.utils import IntegrityError
 from desk.models import Post, Comment, Image, Video, User
 from .forms import ImageFormSet, VideoFormSet, PostForm
 from .utils import conf_code_generator, conf_code_verificator, confirmation_code_sender, email_about_new_comment, postman
-
+from .mixins import *
 
 # Create your views here.
 
@@ -18,7 +18,7 @@ from .utils import conf_code_generator, conf_code_verificator, confirmation_code
 class PostListView(ListView):
     model = Post
     ordering = '-datecreation'
-    template_name = '.html'
+    template_name = 'MainPage.html'
     context_object_name = 'main'
     paginate_by = 10
     
@@ -40,8 +40,129 @@ class PostListView(ListView):
         
         return render(
             request,
-            'post.html',
+            'PostReview.html',
             {'post': post, 'comments': comments, 'user_verification': user_verification}
         )
+        
+        
+class PostIfc():
+    form_class = PostForm
+    model = Post
+    template_name = 'create.html'
+    
+    def is_form_valid(self, form):
+        named_formsets = self.get_named_formsets()
+        if not all((n.is_valid() for n in named_formsets.values())):
+            return self.render_to_response(self.get_context_data(form=form))
+        
+        self.object = form.save(commit=False)
+        self.object.author = self.request.user
+        self.object.save()
+        
+        for name, formset in named_formsets.items():
+            formset_save_func = getattr(self, 'formset_{0}_valid'.format(name), None)
+            if formset_save_func is not None:
+                formset_save_func(formset)
+            else:
+                formset.save()
+        return redirect('MainPage')
+    
+    def is_video_valid(self, formset):
+        video = formset.save(commit=False)
+        for obj in formset.deleted_objects:
+            obj.delete()
+        for v in video:
+            v.post = self.object
+            v.save()
+            
+    def is_images_valid(self, formset):
+        images = formset.save(commit=False)
+        for obj in formset.deleted_objects:
+            obj.delete()
+        for i in images:
+            i.post = self.object
+            i.save()
+            
+            
+class PostCreateView(IsVerifipdMixin, PostIfc, CreateView):
+    def get_context_data(self, **kwargs):
+        c = super(PostCreateView, self).get_context_data(**kwargs)
+        c['named_formsets'] = self.get_named_formsets()
+        return c
+    
+    def get_named_formsets(self):
+        if self.request.method == "GET":
+            return {
+                'video': VideoFormSet(prefix='video'),
+                'images': ImageFormSet(prefix='images'),
+            }
+        else:
+            return {
+                'video': VideoFormSet(self.request.POST or None, self.request.FILES or None, prefix='video'),
+                'images': ImageFormSet(self.request.POST or None, self.request.FILES or None, prefix='images'),
+            }
+
+
+class PostUpdateView(AuthorRequiredMixin, PostIfc, UpdateView):
+    
+    def get_context_data(self, **kwargs):
+        c = super(PostUpdateView, self).get_context_data(**kwargs)
+        c['named_formsets'] = self.get_named_formsets()
+        return c
+    
+    def get_named_formsets(self):
+        return {
+            'video': VideoFormSet(
+                self.request.POST or None,
+                self.request.FILES or None,
+                instance=self.object,
+                prefix='videos'
+            ),
+            
+            'images': ImageFormSet(
+                self.request.POST or None,
+                self.request.FILES or None,
+                instance=self.object,
+                prefix='images'
+            ),
+        }
+
+
+class PostDeleteView(AuthorRequiredMixin, DeleteView):
+    model = Post
+    template_name = 'Delete.html'
+    success_url = reverse_lazy('MainPage', )
+    
+    def delete_image(request, pk):
+        try:
+            image = Image.objects.get(id=pk)
+        except Image.DoesNotExist:
+            messages.success(
+                request, 'Такого изображения не существует'
+            )
+            return redirect('Update', pk=image.post.id)
+        
+        image.delete()
+        messages.success(
+            request, 'Изображение удалено'
+        )
+        return redirect('Update', pk=image.post.id)
+    
+    def delete_video(request, pk):
+        try:
+            video = Video.objects.get(id=pk)
+        except Video.DoesNotExist:
+            messages.success(
+                request, 'Видео не существует'
+            )
+            return redirect('Update', pk=video.post.id)
+        
+        video.delete()
+        messages.success(
+            request, 'Видео удалено'
+        )
+        return redirect('Update', pk=video.post.id)
+        
+    
     
     

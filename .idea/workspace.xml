@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="New Version utils and default forms" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Mixins for views">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727957774407</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mixins for views">
+      <option name="closed" value="true" />
+      <created>1727958795436</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727958795436</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +126,7 @@
     <MESSAGE value="Project started, App &quot;NewsDeskNew&quot; initiated, settings, first model User" />
     <MESSAGE value="Models in final version" />
     <MESSAGE value="New Version utils and default forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Version utils and default forms" />
+    <MESSAGE value="Mixins for views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mixins for views" />
   </component>
 </project>
