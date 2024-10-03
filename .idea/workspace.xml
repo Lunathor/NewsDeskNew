@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Models in final version">
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/desk/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/desk/mixins.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/desk/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="New Version utils and default forms" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727954596515</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New Version utils and default forms">
+      <option name="closed" value="true" />
+      <created>1727957774406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727957774407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +114,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Project started, App &quot;NewsDeskNew&quot; initiated, settings, first model User" />
     <MESSAGE value="Models in final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Models in final version" />
+    <MESSAGE value="New Version utils and default forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Version utils and default forms" />
   </component>
 </project>
