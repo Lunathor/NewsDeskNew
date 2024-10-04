@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728078158860</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1728078213576</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1728078213576</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
