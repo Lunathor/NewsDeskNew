@@ -64,7 +64,7 @@ class Video(models.Model):
     
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, verbose_name='Пост')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор поста')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор комментария')
     text = models.TextField(verbose_name='Содержание комментария')
     datecreation = models.DateTimeField(auto_now_add=True)
     is_confirmed = models.BooleanField(default=False, verbose_name='Подтвержденный комментарий')
