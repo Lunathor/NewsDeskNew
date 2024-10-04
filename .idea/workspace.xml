@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="MainPage template for PostListView and some custom tags and filters for that">
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="PostReview template some filters for it and models added to admin.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PostReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PostReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728067530773</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="PostReview template some filters for it and models added to admin.py">
+      <option name="closed" value="true" />
+      <created>1728071193523</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728071193523</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +198,7 @@
     <MESSAGE value="BOOTSTRAP Uploaded" />
     <MESSAGE value="Templates need some custom tags and filters to realize" />
     <MESSAGE value="MainPage template for PostListView and some custom tags and filters for that" />
-    <option name="LAST_COMMIT_MESSAGE" value="MainPage template for PostListView and some custom tags and filters for that" />
+    <MESSAGE value="PostReview template some filters for it and models added to admin.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="PostReview template some filters for it and models added to admin.py" />
   </component>
 </project>

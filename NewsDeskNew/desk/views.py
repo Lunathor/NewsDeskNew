@@ -48,7 +48,7 @@ class PostListView(ListView):
 class PostIfc():
     form_class = PostForm
     model = Post
-    template_name = 'create.html'
+    template_name = 'Create.html'
     
     def is_form_valid(self, form):
         named_formsets = self.get_named_formsets()
