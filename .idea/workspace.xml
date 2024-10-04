@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Ссылки для шаблонов Delete.html и Create.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728074271383</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Ссылки для шаблонов Delete.html и Create.html">
+      <option name="closed" value="true" />
+      <created>1728074699431</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728074699431</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +247,7 @@
     <MESSAGE value="Сделал ссылки нужные в шаблонах дальше буду допиливать шаблоны и создам приложение для регистрации accounts" />
     <MESSAGE value="Так поправил функции в views.py чтобы они потом смогли встать в ссылки и добавил новое приложение accounts" />
     <MESSAGE value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
+    <MESSAGE value="Ссылки для шаблонов Delete.html и Create.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ссылки для шаблонов Delete.html и Create.html" />
   </component>
 </project>
