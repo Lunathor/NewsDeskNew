@@ -1,12 +1,6 @@
-from django.contrib import messages
-from django.contrib.admin.views.decorators import staff_member_required
-from django.contrib.auth import login, logout
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import Group
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, DeleteView, UpdateView, CreateView
 from rest_framework.reverse import reverse_lazy
-from django.db.utils import IntegrityError
 from desk.models import Post, Comment, Image, Video, User
 from .forms import ImageFormSet, VideoFormSet, PostForm
 from .utils import email_about_new_comment
