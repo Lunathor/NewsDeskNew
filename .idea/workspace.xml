@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Сделал ссылки нужные в шаблонах дальше буду допиливать шаблоны и создам приложение для регистрации accounts">
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,15 +32,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -195,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728072929440</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Так поправил функции в views.py чтобы они потом смогли встать в ссылки и добавил новое приложение accounts">
+      <option name="closed" value="true" />
+      <created>1728073738568</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1728073738568</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts">
+      <option name="closed" value="true" />
+      <created>1728074271383</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1728074271383</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +229,8 @@
     <MESSAGE value="PostReview template some filters for it and models added to admin.py" />
     <MESSAGE value="Шаблон и фильтры то сделал но почему то в urls.py не видит импорт post_review задал вопрос ментору пока буду делать другие шаблоны" />
     <MESSAGE value="Сделал ссылки нужные в шаблонах дальше буду допиливать шаблоны и создам приложение для регистрации accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал ссылки нужные в шаблонах дальше буду допиливать шаблоны и создам приложение для регистрации accounts" />
+    <MESSAGE value="Так поправил функции в views.py чтобы они потом смогли встать в ссылки и добавил новое приложение accounts" />
+    <MESSAGE value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
   </component>
 </project>
