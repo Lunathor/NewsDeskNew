@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3&#10;#&#9;NewsDeskNew/templates/Delete.html">
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +227,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728078213576</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Обнаружил что на стадии создания проекта забыл добавить некоторые важные приложения">
+      <option name="closed" value="true" />
+      <created>1728080106184</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1728080106184</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3&#10;#&#9;NewsDeskNew/templates/Delete.html">
+      <option name="closed" value="true" />
+      <created>1728080278431</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1728080278431</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,6 +275,8 @@
     <MESSAGE value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
     <MESSAGE value="Ссылки для шаблонов Delete.html и Create.html" />
     <MESSAGE value="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения" />
+    <MESSAGE value="Обнаружил что на стадии создания проекта забыл добавить некоторые важные приложения" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3&#10;#&#9;NewsDeskNew/templates/Delete.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3&#10;#&#9;NewsDeskNew/templates/Delete.html" />
   </component>
 </project>

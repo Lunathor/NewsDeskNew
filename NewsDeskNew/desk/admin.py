@@ -20,7 +20,7 @@ class VideoLine(admin.TabularInline):
 
 class PostAdmin(admin.ModelAdmin):
     model = Post
-    list_display = ('pk', 'title', 'text', 'author', 'category')
+    list_display = ('pk','author', 'category', 'title', 'text')
     inlines = [ImageLine, VideoLine]
 
 
