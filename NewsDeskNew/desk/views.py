@@ -36,7 +36,7 @@ class PostListView(ListView):
             
             email_about_new_comment(author=post.author, post_pk=post.id)
             
-            return redirect('PostDetail', pk=pk)
+            return redirect('PostReview', pk=pk)
         
         return render(
             request,

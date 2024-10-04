@@ -1,0 +1,35 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+Объявления
+{% endblock title %}
+{% block content %}
+{% if main %}
+        <table>
+            <tr>
+                <td>Картинка</td>
+                <td>Заголовок</td>
+                <td>Дата публикации</td>
+                <td>Содержание</td>
+                {% if perms.NewsPortal.change_post or perms.NewsPortal.delete_post %}
+                <td>Действия</td>
+                {% endif %}
+            </tr>
+            {% for post in main %}
+            <tr>
+                <td></td>
+                <td>{{ post.title}}</td>
+                <td>{{ post.datecreation|date:'d M Y'}}</td>
+                <td>{{ post.text|truncatechars:20 }}</td>
+                <td>
+                    {% if perms.NewsPortal.change_post %}
+                    <a href="{% url 'post_update' post.id %}">Изменить</a>
+                    {% endif %}
+                    {% if perms.NewsPortal.delete_post %}
+                    <a href="{% url 'post_delete' post.id %}">Удалить</a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+{% endblock content %}

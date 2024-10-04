@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Made forgotten migrates">
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="BOOTSTRAP Uploaded">
+      <change afterPath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PostReview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsDeskNew/templates/flatpages/default.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +21,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -34,14 +39,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -130,7 +136,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728059726980</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="BOOTSTRAP Uploaded">
+      <option name="closed" value="true" />
+      <created>1728061664708</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728061664708</updated>
+    </task>
+    <task id="LOCAL-00011" summary="BOOTSTRAP Uploaded">
+      <option name="closed" value="true" />
+      <created>1728061683268</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728061683268</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +174,7 @@
     <MESSAGE value="Mixins for views" />
     <MESSAGE value="Views added. ListView, Detail, Update, Create, Delete.&#10;Next step is templates for them" />
     <MESSAGE value="Made forgotten migrates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made forgotten migrates" />
+    <MESSAGE value="BOOTSTRAP Uploaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="BOOTSTRAP Uploaded" />
   </component>
 </project>
