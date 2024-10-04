@@ -9,8 +9,9 @@ from rest_framework.reverse import reverse_lazy
 from django.db.utils import IntegrityError
 from desk.models import Post, Comment, Image, Video, User
 from .forms import ImageFormSet, VideoFormSet, PostForm
-from .utils import conf_code_generator, conf_code_verificator, confirmation_code_sender, email_about_new_comment, postman
+from .utils import email_about_new_comment
 from .mixins import *
+
 
 # Create your views here.
 
@@ -21,30 +22,31 @@ class PostListView(ListView):
     template_name = 'MainPage.html'
     context_object_name = 'main'
     paginate_by = 10
+
+
+def post_review(request, pk):
+    post = Post.objects.get(pk=pk)
+    comments = Comment.objects.filter(post=post).order_by('-datecreation')
+    if request.user.is_authenticated:
+        user_verification = request.user.is_verified or request.user.is_staff
+    else:
+        user_verification = False
     
-    def post_review(request, pk):
-        post = Post.objects.get(pk=pk)
-        comments = Comment.objects.filter(post=post).order_by('-datecreation')
-        if request.user.is_authenticated:
-            user_verification = request.user.is_verified or request.user.is_staff
-        else:
-            user_verification = False
+    if request.method == 'POST':
+        text = request.POST['text']
+        Comment.objects.create(text=text, post=post, author=request.user)
         
-        if request.method == 'POST':
-            text = request.POST['text']
-            Comment.objects.create(text=text, post=post, author=request.user)
-            
-            email_about_new_comment(author=post.author, post_pk=post.id)
-            
-            return redirect('PostReview', pk=pk)
+        email_about_new_comment(author=post.author, post_pk=post.id)
         
-        return render(
-            request,
-            'PostReview.html',
-            {'post': post, 'comments': comments, 'user_verification': user_verification}
-        )
-        
-        
+        return redirect('PostReview', pk=pk)
+    
+    return render(
+        request,
+        'PostReview.html',
+        {'post': post, 'comments': comments, 'user_verification': user_verification}
+    )
+
+
 class PostIfc():
     form_class = PostForm
     model = Post
@@ -74,7 +76,7 @@ class PostIfc():
         for v in video:
             v.post = self.object
             v.save()
-            
+    
     def is_images_valid(self, formset):
         images = formset.save(commit=False)
         for obj in formset.deleted_objects:
@@ -82,8 +84,8 @@ class PostIfc():
         for i in images:
             i.post = self.object
             i.save()
-            
-            
+
+
 class PostCreateView(IsVerifipdMixin, PostIfc, CreateView):
     def get_context_data(self, **kwargs):
         c = super(PostCreateView, self).get_context_data(**kwargs)
@@ -132,37 +134,35 @@ class PostDeleteView(AuthorRequiredMixin, DeleteView):
     model = Post
     template_name = 'Delete.html'
     success_url = reverse_lazy('MainPage', )
-    
-    def delete_image(request, pk):
-        try:
-            image = Image.objects.get(id=pk)
-        except Image.DoesNotExist:
-            messages.success(
-                request, 'Такого изображения не существует'
-            )
-            return redirect('Update', pk=image.post.id)
-        
-        image.delete()
+
+
+def delete_image(request, pk):
+    try:
+        image = Image.objects.get(id=pk)
+    except Image.DoesNotExist:
         messages.success(
-            request, 'Изображение удалено'
+            request, 'Такого изображения не существует'
         )
         return redirect('Update', pk=image.post.id)
     
-    def delete_video(request, pk):
-        try:
-            video = Video.objects.get(id=pk)
-        except Video.DoesNotExist:
-            messages.success(
-                request, 'Видео не существует'
-            )
-            return redirect('Update', pk=video.post.id)
-        
-        video.delete()
+    image.delete()
+    messages.success(
+        request, 'Изображение удалено'
+    )
+    return redirect('Update', pk=image.post.id)
+
+
+def delete_video(request, pk):
+    try:
+        video = Video.objects.get(id=pk)
+    except Video.DoesNotExist:
         messages.success(
-            request, 'Видео удалено'
+            request, 'Видео не существует'
         )
         return redirect('Update', pk=video.post.id)
-        
     
-    
-    
+    video.delete()
+    messages.success(
+        request, 'Видео удалено'
+    )
+    return redirect('Update', pk=video.post.id)

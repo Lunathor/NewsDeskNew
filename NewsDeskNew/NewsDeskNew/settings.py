@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'desk',
     'embed_video',
+    'accounts',
 ]
 
 MIDDLEWARE = [
