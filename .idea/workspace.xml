@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="PostReview template some filters for it and models added to admin.py">
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Шаблон и фильтры то сделал но почему то в urls.py не видит импорт post_review задал вопрос ментору пока буду делать другие шаблоны">
+      <change afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -173,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728071193523</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Шаблон и фильтры то сделал но почему то в urls.py не видит импорт post_review задал вопрос ментору пока буду делать другие шаблоны">
+      <option name="closed" value="true" />
+      <created>1728072200868</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728072200868</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +208,7 @@
     <MESSAGE value="Templates need some custom tags and filters to realize" />
     <MESSAGE value="MainPage template for PostListView and some custom tags and filters for that" />
     <MESSAGE value="PostReview template some filters for it and models added to admin.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="PostReview template some filters for it and models added to admin.py" />
+    <MESSAGE value="Шаблон и фильтры то сделал но почему то в urls.py не видит импорт post_review задал вопрос ментору пока буду делать другие шаблоны" />
+    <option name="LAST_COMMIT_MESSAGE" value="Шаблон и фильтры то сделал но почему то в urls.py не видит импорт post_review задал вопрос ментору пока буду делать другие шаблоны" />
   </component>
 </project>
