@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Templates need some custom tags and filters to realize">
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/static/img/empty.jpg" afterDir="false" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="MainPage template for PostListView and some custom tags and filters for that">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PostReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PostReview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728064321922</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="MainPage template for PostListView and some custom tags and filters for that">
+      <option name="closed" value="true" />
+      <created>1728067530773</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728067530773</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +191,7 @@
     <MESSAGE value="Made forgotten migrates" />
     <MESSAGE value="BOOTSTRAP Uploaded" />
     <MESSAGE value="Templates need some custom tags and filters to realize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Templates need some custom tags and filters to realize" />
+    <MESSAGE value="MainPage template for PostListView and some custom tags and filters for that" />
+    <option name="LAST_COMMIT_MESSAGE" value="MainPage template for PostListView and some custom tags and filters for that" />
   </component>
 </project>
