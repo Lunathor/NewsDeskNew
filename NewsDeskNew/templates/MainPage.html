@@ -1,35 +1,66 @@
 {% extends 'flatpages/default.html' %}
-
+{% load custom_filters %}
+{% load custom_tags %}
 {% block title %}
 Объявления
 {% endblock title %}
 {% block content %}
-{% if main %}
+    {% if main %}
         <table>
             <tr>
                 <td>Картинка</td>
                 <td>Заголовок</td>
                 <td>Дата публикации</td>
                 <td>Содержание</td>
-                {% if perms.NewsPortal.change_post or perms.NewsPortal.delete_post %}
+                {% if perms.NewsDeskNew.change_post or perms.NewsDeskNew.delete_post %}
                 <td>Действия</td>
                 {% endif %}
             </tr>
             {% for post in main %}
             <tr>
-                <td></td>
+                <td>{% if post|is_image_exist %}
+                        <img src="{{ post|preview }}"/>
+                    {% else %}
+                        <img src={% static 'images/empty.jpg' %} />
+                    {% endif %}
+                </td>
                 <td>{{ post.title}}</td>
                 <td>{{ post.datecreation|date:'d M Y'}}</td>
                 <td>{{ post.text|truncatechars:20 }}</td>
+                <td><a href="PostReview">Детали</a></td>
                 <td>
-                    {% if perms.NewsPortal.change_post %}
-                    <a href="{% url 'post_update' post.id %}">Изменить</a>
+                    {% if perms.NewsDeskNew.change_post %}
+                    <a href="{% url 'Update' post.id %}">Изменить</a>
                     {% endif %}
-                    {% if perms.NewsPortal.delete_post %}
-                    <a href="{% url 'post_delete' post.id %}">Удалить</a>
+                    {% if perms.NewsDeskNew.delete_post %}
+                    <a href="{% url 'Delete' post.id %}">Удалить</a>
                     {% endif %}
                 </td>
             </tr>
             {% endfor %}
         </table>
+    {% else %}
+            <h2>Новостей нет!</h2>
+    {% endif %}
+    {# Предыдущие страницы #}
+    {% if page_obj.has_previous %}
+        <a href="?{% url_replace page=1 %}">1</a>
+        {% if page_obj.previous_page_number != 1 %}
+            ...
+            <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
+        {% endif %}
+    {% endif %}
+
+    {# Текущая страница #}
+    {{ page_obj.number }}
+
+    {# Следующие страницы #}
+    {% if page_obj.has_next %}
+        <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
+        {% if paginator.num_pages != page_obj.next_page_number %}
+            ...
+            <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
+        {% endif %}
+    {% endif %}
+{% endblock content %}
 {% endblock content %}
