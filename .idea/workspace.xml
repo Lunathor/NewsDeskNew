@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +201,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728074271383</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Ссылки для шаблонов Delete.html и Create.html">
+      <option name="closed" value="true" />
+      <created>1728074699431</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728074699431</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1728078158860</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1728078158860</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +247,8 @@
     <MESSAGE value="Сделал ссылки нужные в шаблонах дальше буду допиливать шаблоны и создам приложение для регистрации accounts" />
     <MESSAGE value="Так поправил функции в views.py чтобы они потом смогли встать в ссылки и добавил новое приложение accounts" />
     <MESSAGE value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
+    <MESSAGE value="Ссылки для шаблонов Delete.html и Create.html" />
+    <MESSAGE value="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения" />
   </component>
 </project>

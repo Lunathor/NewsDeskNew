@@ -1,7 +1,7 @@
 from django import template
 from desk.models import *
 
-register = template.Library
+register = template.Library()
 
 
 @register.filter
