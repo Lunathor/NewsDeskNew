@@ -1,5 +1,19 @@
 {% extends 'flatpages/default.html' %}
 {% block title %}
+Верификация
 {% endblock title %}
 {% block content %}
+<h1>Подтверждение аккаунта</h1>
+<form method="post">
+        {% csrf_token %}
+        <div>
+            <p>Введите код отправленный на почту {{ user }}:</p>
+        </div>
+        <div>
+            <input type="text" name="email_conf_code" placeholder="Код подтверждения" required>
+        </div>
+        <div>
+            <button type="submit">Подтвердить</button>
+        </div>
+    </form>
 {% endblock content %}
