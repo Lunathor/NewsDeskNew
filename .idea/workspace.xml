@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Третий шаблон Verification.html">
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/templatetags/custom_filters.py" afterDir="false" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Шаблон личного кабинета&#10;Теперь запуск проверка и доработка при наличии ошибок">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/templatetags/custom_filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/templatetags/custom_filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -317,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728157462196</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Шаблон личного кабинета&#10;Теперь запуск проверка и доработка при наличии ошибок">
+      <option name="closed" value="true" />
+      <created>1728159516506</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1728159516506</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,7 +345,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="New Version utils and default forms" />
     <MESSAGE value="Mixins for views" />
     <MESSAGE value="Views added. ListView, Detail, Update, Create, Delete.&#10;Next step is templates for them" />
     <MESSAGE value="Made forgotten migrates" />
@@ -358,6 +369,7 @@
     <MESSAGE value="Первый шаблон SignUp.html" />
     <MESSAGE value="Второй шаблон Login.html" />
     <MESSAGE value="Третий шаблон Verification.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Третий шаблон Verification.html" />
+    <MESSAGE value="Шаблон личного кабинета&#10;Теперь запуск проверка и доработка при наличии ошибок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Шаблон личного кабинета&#10;Теперь запуск проверка и доработка при наличии ошибок" />
   </component>
 </project>
