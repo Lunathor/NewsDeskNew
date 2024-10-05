@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Проверка личного кабинета, 2 версии custom_filters.py конфликтовали поэтому пришлось объединить.&#10;Внутри представления почему то не отклоняются комментарии">
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +333,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728160772748</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Проверка личного кабинета, 2 версии custom_filters.py конфликтовали поэтому пришлось объединить.&#10;Внутри представления почему то не отклоняются комментарии">
+      <option name="closed" value="true" />
+      <created>1728161694230</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1728161694230</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3">
+      <option name="closed" value="true" />
+      <created>1728161815263</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1728161815263</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +365,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Views added. ListView, Detail, Update, Create, Delete.&#10;Next step is templates for them" />
     <MESSAGE value="Made forgotten migrates" />
     <MESSAGE value="BOOTSTRAP Uploaded" />
     <MESSAGE value="Templates need some custom tags and filters to realize" />
@@ -374,6 +389,7 @@
     <MESSAGE value="Третий шаблон Verification.html" />
     <MESSAGE value="Шаблон личного кабинета&#10;Теперь запуск проверка и доработка при наличии ошибок" />
     <MESSAGE value="Проверка личного кабинета, 2 версии custom_filters.py конфликтовали поэтому пришлось объединить.&#10;Внутри представления почему то не отклоняются комментарии" />
-    <option name="LAST_COMMIT_MESSAGE" value="Проверка личного кабинета, 2 версии custom_filters.py конфликтовали поэтому пришлось объединить.&#10;Внутри представления почему то не отклоняются комментарии" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;NewsDeskNew/db.sqlite3" />
   </component>
 </project>

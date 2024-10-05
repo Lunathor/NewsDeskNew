@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, DeleteView, UpdateView, CreateView
 from rest_framework.reverse import reverse_lazy
-from desk.models import Post, Comment, Image, Video, User
+from desk.models import *
 from .forms import ImageFormSet, VideoFormSet, PostForm
 from accounts.utils import email_about_new_comment
 from django.db.utils import IntegrityError
