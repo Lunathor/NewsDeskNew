@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Представления для нового приложения accounts также перенес туда утилиты потому что большая туда они больше подходят да и это удобнее.&#10;Следующий шаг новые шаблоны в папку registration а затем настройка исправление ошибок в работе которых пока не видно на этапе написания кода">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" afterDir="false" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Старт написания шаблонов, ссылки для представлений">
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/SignUp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Verification.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Verification.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728135875004</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Старт написания шаблонов, ссылки для представлений">
+      <option name="closed" value="true" />
+      <created>1728155736542</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1728155736542</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,6 +330,7 @@
     <MESSAGE value="Пытаюсь найти ошибку почему выдает ошибку IntegrityError при создании поста" />
     <MESSAGE value="Поправил некоторые ошибки в связи с которыми некоторые функции работали неправильно или не работали вовсе" />
     <MESSAGE value="Представления для нового приложения accounts также перенес туда утилиты потому что большая туда они больше подходят да и это удобнее.&#10;Следующий шаг новые шаблоны в папку registration а затем настройка исправление ошибок в работе которых пока не видно на этапе написания кода" />
-    <option name="LAST_COMMIT_MESSAGE" value="Представления для нового приложения accounts также перенес туда утилиты потому что большая туда они больше подходят да и это удобнее.&#10;Следующий шаг новые шаблоны в папку registration а затем настройка исправление ошибок в работе которых пока не видно на этапе написания кода" />
+    <MESSAGE value="Старт написания шаблонов, ссылки для представлений" />
+    <option name="LAST_COMMIT_MESSAGE" value="Старт написания шаблонов, ссылки для представлений" />
   </component>
 </project>
