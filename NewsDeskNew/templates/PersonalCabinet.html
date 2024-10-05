@@ -1,10 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'flatpages/default.html' %}
+{% load custom_filters %}
+{% block title %}
+Личный кабинет
+{% endblock title %}
+{% block content %}
+<h1>Личный кабинет: {{ user.username }}</h1>
+<div class="container">
+    <div>
+        <p>Получать новости о нас</p>
+        {% if user.about_sub %}
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="about_unsub" value="{{ user.id }}"/>
+            <input type="submit" value="Отписаться">
+        </form>
+        {% else %}
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="about_sub" value="{{ user.id }}"/>
+            <input type="submit" value="Подписаться">
+        </form>
+        {% endif %}
+    </div>
+    <div>
+        <p>Уведомления об откликах:</p>
+        {% if user.users_comments %}
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="comment_notif_unsub" value="{{ user.id }}"/>
+            <input type="submit" value="Не получать">
+        </form>
+        {% else %}
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="comment_notif_sub" value="{{ user.id }}"/>
+            <input type="submit" value="Получать">
+        </form>
+        {% endif %}
+    </div>
+    {% if user.is_staff %}
+    <div>
+        <a href="#">Новостная рассылка</a>
+    </div>
+    {% endif %}
+</div>
+<div>
+    <form action="{% url 'Logout' %}" method="post" >
+        {% csrf_token %}
+        <input type="submit" value="Выход">
+    </form>
+</div>
+<div>
+    <p>Комментарии</p>
+</div>
+<div>
+    {% for post in posts %}
+        {% if post.id|is_comments_exist %}
+        {{ post.title }}
+            {% for comment in comments %}
+                {% if comm.post == post and not comment.is_confirmed %}
+                    <div>
+                        <div>
+                            <p>
+                                Пользователь:
+                                {{ comment.author }}
+                            </p>
+                            <p>
+                                {{ comment.datecreation }}
+                            </p>
+                            <p>
+                                {{ comment.text }}
+                            </p>
+                            <p>
+                            <form method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="agree" value="{{ comment.id }}"/>
+                                <input type="submit" value="Принять">
+                            </form>
+                            <form method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="decline" value="{{ comment.id }}"/>
+                                <input type="submit" value="Отклонить">
+                            </form>
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</div>
 
-</body>
-</html>
+{% endblock content %}

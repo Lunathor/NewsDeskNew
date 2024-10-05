@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Второй шаблон Login.html" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Третий шаблон Verification.html">
+      <change afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/templatetags/custom_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -305,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728157208018</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Третий шаблон Verification.html">
+      <option name="closed" value="true" />
+      <created>1728157462196</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1728157462196</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,7 +333,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Models in final version" />
     <MESSAGE value="New Version utils and default forms" />
     <MESSAGE value="Mixins for views" />
     <MESSAGE value="Views added. ListView, Detail, Update, Create, Delete.&#10;Next step is templates for them" />
@@ -346,6 +357,7 @@
     <MESSAGE value="Старт написания шаблонов, ссылки для представлений" />
     <MESSAGE value="Первый шаблон SignUp.html" />
     <MESSAGE value="Второй шаблон Login.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Второй шаблон Login.html" />
+    <MESSAGE value="Третий шаблон Verification.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Третий шаблон Verification.html" />
   </component>
 </project>
