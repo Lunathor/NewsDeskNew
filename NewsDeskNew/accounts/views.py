@@ -6,9 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import Group
 from django.shortcuts import render, redirect
 from django.views.generic import ListView
-from rest_framework.reverse import reverse_lazy
 from django.db.utils import IntegrityError
-from desk.models import Post, Comment, Image, Video, User
+from desk.models import Post, Comment, User
 from .utils import conf_code_generator, conf_code_verificator, confirmation_code_sender, postman
 from desk.mixins import *
 
@@ -19,7 +18,7 @@ from desk.mixins import *
 class PersonalCabinetView(CustomLoginRequiredMixin, ListView):
     model = Comment
     template_name = 'PersonalCabinet.html'
-    context_object_name = 'comment'
+    context_object_name = 'comments'
     
     def get_context_data(self, **kwargs):
         c = super().get_context_data(**kwargs)

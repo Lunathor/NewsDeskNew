@@ -34,7 +34,7 @@ class IsVerifipdMixin(AccessMixin):
 class CustomLoginRequiredMixin(AccessMixin):
     def dispatch(self, request, *args, **kwargs):
         if not request.user.is_authenticated:
-            return redirect('Login')
+            return redirect('login')
         return super().dispatch(request, *args, **kwargs)
         
         

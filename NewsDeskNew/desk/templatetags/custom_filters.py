@@ -10,7 +10,7 @@ def is_image_exist(value: Post) -> bool:
         return True
     else:
         return False
-    
+
 
 @register.filter
 def preview(value: Post) -> Image:
@@ -34,3 +34,11 @@ def is_video_exist(value: Post) -> bool:
 @register.filter
 def get_video(value: Post) -> list[Video]:
     return Video.objects.filter(post=value.pk).all()
+
+
+@register.filter
+def is_comments_exist(pk: int) -> bool:
+    if Comment.objects.filter(post=pk, is_confirmed=False).exists():
+        return True
+    else:
+        return False

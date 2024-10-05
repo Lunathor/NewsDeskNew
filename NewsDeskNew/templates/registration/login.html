@@ -4,7 +4,7 @@
 {% endblock title %}
 {% block content %}
 <h1>Вход</h1>
-<form action="{% url login %}" method="post">
+<form action="{% url 'login' %}" method="post">
     {% csrf_token %}
     <div class="container">
         <div>

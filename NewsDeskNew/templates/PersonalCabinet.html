@@ -11,13 +11,13 @@
         {% if user.about_sub %}
         <form method="post">
             {% csrf_token %}
-            <input type="hidden" name="about_unsub" value="{{ user.id }}"/>
+            <input type="hidden" name="about_unsub" value="{{ user.pk }}"/>
             <input type="submit" value="Отписаться">
         </form>
         {% else %}
         <form method="post">
             {% csrf_token %}
-            <input type="hidden" name="about_sub" value="{{ user.id }}"/>
+            <input type="hidden" name="about_sub" value="{{ user.pk }}"/>
             <input type="submit" value="Подписаться">
         </form>
         {% endif %}
@@ -27,13 +27,13 @@
         {% if user.users_comments %}
         <form method="post">
             {% csrf_token %}
-            <input type="hidden" name="comment_notif_unsub" value="{{ user.id }}"/>
+            <input type="hidden" name="comment_notif_unsub" value="{{ user.pk }}"/>
             <input type="submit" value="Не получать">
         </form>
         {% else %}
         <form method="post">
             {% csrf_token %}
-            <input type="hidden" name="comment_notif_sub" value="{{ user.id }}"/>
+            <input type="hidden" name="comment_notif_sub" value="{{ user.pk }}"/>
             <input type="submit" value="Получать">
         </form>
         {% endif %}
@@ -55,10 +55,10 @@
 </div>
 <div>
     {% for post in posts %}
-        {% if post.id|is_comments_exist %}
+        {% if post.pk|is_comments_exist %}
         {{ post.title }}
             {% for comment in comments %}
-                {% if comm.post == post and not comment.is_confirmed %}
+                {% if comment.post == post and not comment.is_confirmed %}
                     <div>
                         <div>
                             <p>
@@ -66,7 +66,7 @@
                                 {{ comment.author }}
                             </p>
                             <p>
-                                {{ comment.datecreation }}
+                                {{ comment.datecreation|date:'d M Y' }}
                             </p>
                             <p>
                                 {{ comment.text }}
@@ -74,15 +74,14 @@
                             <p>
                             <form method="post">
                                 {% csrf_token %}
-                                <input type="hidden" name="agree" value="{{ comment.id }}"/>
+                                <input type="hidden" name="agree" value="{{ comment.pk }}"/>
                                 <input type="submit" value="Принять">
                             </form>
                             <form method="post">
                                 {% csrf_token %}
-                                <input type="hidden" name="decline" value="{{ comment.id }}"/>
+                                <input type="hidden" name="decline" value="{{ comment.pk }}"/>
                                 <input type="submit" value="Отклонить">
                             </form>
-                            </p>
                         </div>
                     </div>
                 {% endif %}
