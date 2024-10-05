@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Старт написания шаблонов, ссылки для представлений">
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Первый шаблон SignUp.html">
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728155736542</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Первый шаблон SignUp.html">
+      <option name="closed" value="true" />
+      <created>1728156567792</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1728156567792</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,6 +339,7 @@
     <MESSAGE value="Поправил некоторые ошибки в связи с которыми некоторые функции работали неправильно или не работали вовсе" />
     <MESSAGE value="Представления для нового приложения accounts также перенес туда утилиты потому что большая туда они больше подходят да и это удобнее.&#10;Следующий шаг новые шаблоны в папку registration а затем настройка исправление ошибок в работе которых пока не видно на этапе написания кода" />
     <MESSAGE value="Старт написания шаблонов, ссылки для представлений" />
-    <option name="LAST_COMMIT_MESSAGE" value="Старт написания шаблонов, ссылки для представлений" />
+    <MESSAGE value="Первый шаблон SignUp.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Первый шаблон SignUp.html" />
   </component>
 </project>
