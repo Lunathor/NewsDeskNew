@@ -3,7 +3,7 @@ from django.views.generic import ListView, DeleteView, UpdateView, CreateView
 from rest_framework.reverse import reverse_lazy
 from desk.models import Post, Comment, Image, Video, User
 from .forms import ImageFormSet, VideoFormSet, PostForm
-from .utils import email_about_new_comment
+from accounts.utils import email_about_new_comment
 from django.db.utils import IntegrityError
 from .mixins import *
 

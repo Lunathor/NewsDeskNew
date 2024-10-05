@@ -2,7 +2,7 @@ import pyotp
 from django.conf import settings
 from django.core.mail import send_mail
 from rest_framework.reverse import reverse_lazy
-from .models import User, Post
+from desk.models import User, Post
 
 
 def conf_code_generator(user: User) -> str:
@@ -28,8 +28,8 @@ def confirmation_code_sender(user: User) -> None:
         [email],
         fail_silently=False,
     )
-   
-    
+
+
 def email_about_new_comment(author: User, post_pk: int) -> None:
     email = author.email
     url = reverse_lazy('PersonalCabinet')
@@ -44,8 +44,8 @@ def email_about_new_comment(author: User, post_pk: int) -> None:
         [email],
         fail_silently=False,
     )
-    
-    
+
+
 def postman(msg_title_of_post: str, msg_text_of_post: str) -> None:
     for user in User.objects.filter(about_sub=True):
         email = user.email
