@@ -61,7 +61,7 @@ class PersonalCabinetView(CustomLoginRequiredMixin, ListView):
         return redirect('PersonalCabinet')
 
 
-def Loggout(request):
+def Logout(request):
     logout(request)
     return redirect('MainPage')
 
