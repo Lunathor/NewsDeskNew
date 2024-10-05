@@ -47,7 +47,7 @@ class PostIfc():
     model = Post
     template_name = 'Create.html'
     
-    def is_form_valid(self, form):
+    def form_valid(self, form):
         named_formsets = self.get_named_formsets()
         if not all((n.is_valid() for n in named_formsets.values())):
             return self.render_to_response(self.get_context_data(form=form))
@@ -64,7 +64,7 @@ class PostIfc():
                 formset.save()
         return redirect('MainPage')
     
-    def is_video_valid(self, formset):
+    def formset_video_valid(self, formset):
         video = formset.save(commit=False)
         for obj in formset.deleted_objects:
             obj.delete()
@@ -72,7 +72,7 @@ class PostIfc():
             v.post = self.object
             v.save()
     
-    def is_images_valid(self, formset):
+    def formset_images_valid(self, formset):
         images = formset.save(commit=False)
         for obj in formset.deleted_objects:
             obj.delete()

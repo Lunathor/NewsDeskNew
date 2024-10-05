@@ -32,7 +32,7 @@ def confirmation_code_sender(user: User) -> None:
     
 def email_about_new_comment(author: User, post_pk: int) -> None:
     email = author.email
-    url = reverse_lazy('personal_cabinet')
+    url = reverse_lazy('PersonalCabinet')
     post = Post.objects.get(pk=post_pk)
     msg_title_of_post = post.preview()
     

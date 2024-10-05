@@ -7,19 +7,16 @@
 {% endblock title %}
 {% block content %}
     <h1>{{ post.title }}</h1>
+    <h2>{{ post.datecreation|date:'d M Y' }}</h2>
     {% if post|is_image_exist %}
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 {% for image in post|get_image %}
-                    <img style="max-width: 640px" src={{img.file.url}} />
+                    <img style="max-width: 600px" src={{image.file.url}} />
                 {% endfor %}
             </div>
         </div>
     {% endif %}
-    <div class="container px-4 px-lg-4 mt-5">
-        {{ post.text|linebreaks }}
-    </div>
-
     {% if post|is_video_exist %}
         <div class="container px-4 px-lg-5 mt-5 justify-content-center">
             <div class="row gx-4 gx-lg-3 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
@@ -29,7 +26,6 @@
             </div>
         </div>
     {% endif %}
-    <h2>{{ post.datecreation|date:'d M Y' }}</h2>
     <p>{{ post.text }}</p>
     <div class="container px-4 px-lg-5">
         <div class="text-center">

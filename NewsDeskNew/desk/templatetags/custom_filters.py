@@ -14,7 +14,7 @@ def is_image_exist(value: Post) -> bool:
 
 @register.filter
 def preview(value: Post) -> Image:
-    image = Image.objects.filter(post=value).first()
+    image = Image.objects.filter(post=value.pk).first()
     return image.file.url
 
 

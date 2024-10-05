@@ -15,6 +15,7 @@ class AuthorRequiredMixin(AccessMixin):
             if user != self.get_object().author:
                 messages.info(request, 'У вас нет авторских прав')
                 return redirect('MainPage')
+        return super().dispatch(request, *args, **kwargs)
             
             
 class IsVerifipdMixin(AccessMixin):

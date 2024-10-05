@@ -21,16 +21,16 @@
             {% for post in main %}
             <tr>
                 <td>{% if post|is_image_exist %}
-                        <img src="{{ post|preview }}"/>
+                        <img class="card-img-top" src="{{ post|preview }}"/>
                     {% else %}
-                        <img src={% static 'images/empty.jpg' %} />
+                        <img class="card-img-top" src={% static 'images/empty.jpg' %} />
                     {% endif %}
                 </td>
                 <td>{{ post.title}}</td>
                 <td>{{ post.datecreation|date:'d M Y'}}</td>
                 <td>{{ post.text|truncatechars:20 }}</td>
-                <td><a href="PostReview">Детали</a></td>
                 <td>
+                    <a href="{% url 'PostReview' pk=post.id %}">Детали</a>
                     {% if perms.NewsDeskNew.change_post %}
                     <a href="{% url 'Update' post.id %}">Изменить</a>
                     {% endif %}
@@ -44,6 +44,7 @@
     {% else %}
             <h2>Новостей нет!</h2>
     {% endif %}
+<footer>
     {# Предыдущие страницы #}
     {% if page_obj.has_previous %}
         <a href="?{% url_replace page=1 %}">1</a>
@@ -64,4 +65,5 @@
             <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
         {% endif %}
     {% endif %}
+</footer>
 {% endblock content %}
