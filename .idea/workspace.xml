@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Мелкие изменения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Verification.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Verification.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728382838826</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1728384108002</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1728384108002</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

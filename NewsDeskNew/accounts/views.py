@@ -45,6 +45,7 @@ class PersonalCabinetView(CustomLoginRequiredMixin, ListView):
             if request.POST.get('comment_notif_unsub'):
                 user_id = request.POST.get('comment_notif_unsub')
                 user = User.objects.get(pk=user_id)
+                user.users_comments = False
                 user.save()
             if request.POST.get('agree'):
                 comment_id = request.POST.get('agree')
@@ -53,9 +54,7 @@ class PersonalCabinetView(CustomLoginRequiredMixin, ListView):
                 comment.save()
             if request.POST.get('decline'):
                 comment_id = request.POST.get('decline')
-                comment = Comment.objects.get(pk=comment_id)
-                comment.is_confirmed = False
-                comment.save()
+                Comment.objects.filter(pk=comment_id).delete()
         return redirect('PersonalCabinet')
 
 
