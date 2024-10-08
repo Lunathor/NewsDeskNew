@@ -16,7 +16,6 @@
                 <td>{% trans 'Дата публикации' %}</td>
                 <td>{% trans 'Содержание' %}</td>
                 <td>{% trans 'Действия' %}</td>
-                {% endif %}
             </tr>
             {% for post in main %}
             <tr>
@@ -42,7 +41,7 @@
             {% endfor %}
         </table>
     {% else %}
-            <h2>{% trans 'Новостей нет!' %}</h2>
+            <h2>{% trans Новостей нет!' %</h2>
     {% endif %}
 <footer>
     {# Предыдущие страницы #}

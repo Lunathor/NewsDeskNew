@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 00:59+0300\n"
+"POT-Creation-Date: 2024-10-09 01:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\accounts\views.py:82
+msgid "Такой пользователь уже есть"
+msgstr "User already exist"
+
+#: .\accounts\views.py:90
+msgid "Проверьте правильность пароля"
+msgstr "Check is password correct"
+
+#: .\accounts\views.py:110
+msgid "Проверьте правильность кода"
+msgstr "Check is code correct"
 
 #: .\desk\models.py:38
 msgid "Заголовок поста"
@@ -100,6 +112,10 @@ msgstr "Delete post"
 #: .\templates\Delete.html:12
 msgid "Удаляем пост"
 msgstr "Delete post"
+
+#: .\templates\MainPage.html:7
+msgid "Объявления"
+msgstr "Posts"
 
 #: .\templates\MainPage.html:10
 msgid "Все объявления"

@@ -1,4 +1,6 @@
+import pytz
 from django.shortcuts import render, redirect
+from django.utils import timezone
 from django.views.generic import ListView, DeleteView, UpdateView, CreateView
 from rest_framework.reverse import reverse_lazy
 from desk.models import *
@@ -17,6 +19,7 @@ class PostListView(ListView):
     template_name = 'MainPage.html'
     context_object_name = 'main'
     paginate_by = 10
+    
 
 
 def post_review(request, pk):

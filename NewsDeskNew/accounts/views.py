@@ -1,7 +1,6 @@
 from django.contrib import messages
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import login, logout
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import Group
 from django.shortcuts import render, redirect
 from django.views.generic import ListView
@@ -9,6 +8,7 @@ from django.db.utils import IntegrityError
 from desk.models import *
 from .utils import conf_code_generator, conf_code_verificator, confirmation_code_sender, postman
 from desk.mixins import *
+from django.utils.translation import gettext_lazy as _
 
 
 # Create your views here.
@@ -79,7 +79,7 @@ def SignUp(request):
             try:
                 user = User.objects.create_user(username=username, email=email, password=password1, about_sub=about_sub)
             except IntegrityError:
-                msg = 'Такой пользователь уже есть'
+                msg = _('Такой пользователь уже есть')
                 return render(request, 'registration/SignUp.html', {'msg': msg})
             conf_code_generator(user=user)
             confirmation_code_sender(user=user)
@@ -87,7 +87,7 @@ def SignUp(request):
             return redirect('Verification', user_id=user.pk)
         
         else:
-            msg = 'Проверьте правильность пароля'
+            msg = _('Проверьте правильность пароля')
             return render(request, 'registration/SignUp.html', {'msg': msg})
     
     return render(request, 'registration/SignUp.html')
@@ -107,7 +107,7 @@ def Verification(request, user_id=None):
             login(request, user)
             return redirect('MainPage')
         else:
-            msg = 'Проверьте правильность кода'
+            msg = _('Проверьте правильность кода')
             return render(request, 'registration/Verification.html', {'error': msg, 'user': user})
     return render(request, 'registration/Verification.html', {'user': user})
 
