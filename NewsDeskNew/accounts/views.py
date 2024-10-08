@@ -26,7 +26,7 @@ class PersonalCabinetView(CustomLoginRequiredMixin, ListView):
         return c
     
     def post(self, request, *args, **kwargs):
-        if request.method == 'Post':
+        if request.method == 'POST':
             if request.POST.get('about_sub'):
                 user_id = request.POST.get('about_sub')
                 user = User.objects.get(pk=user_id)
