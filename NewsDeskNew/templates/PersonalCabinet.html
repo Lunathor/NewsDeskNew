@@ -1,10 +1,11 @@
 {% extends 'flatpages/default.html' %}
 {% load custom_filters %}
+{% load i18n %}
 {% block title %}
 Личный кабинет
 {% endblock title %}
 {% block content %}
-<h1>Личный кабинет: {{ user.username }}</h1>
+<h1>{% trans Личный кабинет %}: {{ user.username }}</h1>
 <div class="container">
     <div>
         <p>Получать новости о нас</p>
@@ -40,7 +41,7 @@
     </div>
     {% if user.is_staff %}
     <div>
-        <a href="#">Новостная рассылка</a>
+        <a href="{% url 'Postman' %}">Новостная рассылка</a>
     </div>
     {% endif %}
 </div>
