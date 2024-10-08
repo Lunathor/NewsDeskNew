@@ -1,22 +1,23 @@
 {% extends 'flatpages/default.html' %}
+{% load i18n %}
 {% block title %}
-Почтальон
+{% trans 'Почтальон' %}
 {% endblock title %}
 {% block content %}
-<h1>Почтальон</h1>
+<h1>{% trans 'Почтальон' %}</h1>
 <form>
     {% csrf_token %}
     <div class="container">
         <div>
-            <p>Тема:</p>
+            <p>{% trans 'Тема' %}:</p>
             <input type="text" name="msg_title_of_post"/>
         </div>
         <div>
-            <p>Содержание:</p>
+            <p>{% trans 'Содержание' %}:</p>
             <input type="text" name="msg_text_of_post"/>
         </div>
         <div>
-            <button type="submit">Разослать</button>
+            <button type="submit">{% trans 'Разослать' %}</button>
         </div>
     </div>
 </form>

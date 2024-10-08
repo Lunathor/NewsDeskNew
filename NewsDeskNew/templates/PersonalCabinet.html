@@ -8,7 +8,7 @@
 <h1>{% trans 'Личный кабинет' %}: {{ user.username }}</h1>
 <div class="container">
     <div>
-        <p>Получать новости о нас</p>
+        <p>{% trans 'Получать новости о нас' %}</p>
         {% if user.about_sub %}
         <form method="post">
             {% csrf_token %}
@@ -24,35 +24,35 @@
         {% endif %}
     </div>
     <div>
-        <p>Уведомления об откликах:</p>
+        <p>{% trans 'Уведомления об откликах' %}:</p>
         {% if user.users_comments %}
         <form method="post">
             {% csrf_token %}
             <input type="hidden" name="comment_notif_unsub" value="{{ user.pk }}"/>
-            <input type="submit" value="Не получать">
+            <input type="submit" value="{% trans 'Не получать' %}">
         </form>
         {% else %}
         <form method="post">
             {% csrf_token %}
             <input type="hidden" name="comment_notif_sub" value="{{ user.pk }}"/>
-            <input type="submit" value="Получать">
+            <input type="submit" value="{% trans 'Получать' %}">
         </form>
         {% endif %}
     </div>
     {% if user.is_staff %}
     <div>
-        <a href="{% url 'Postman' %}">Новостная рассылка</a>
+        <a href="{% url 'Postman' %}">{% trans 'Новостная рассылка' %}</a>
     </div>
     {% endif %}
 </div>
 <div>
     <form action="{% url 'Logout' %}" method="post" >
         {% csrf_token %}
-        <input type="submit" value="Выход">
+        <input type="submit" value="{% trans 'Выход' %}">
     </form>
 </div>
 <div>
-    <p>Комментарии</p>
+    <p>{% trans 'Комментарии' %}</p>
 </div>
 <div>
     {% for post in posts %}
@@ -63,25 +63,27 @@
                     <div>
                         <div>
                             <p>
-                                Пользователь:
+                                {% trans 'Пользователь' %}:
                                 {{ comment.author }}
                             </p>
                             <p>
+                                {% trans 'Дата' %}:
                                 {{ comment.datecreation|date:'d M Y' }}
                             </p>
                             <p>
+                                {% trans 'Содержание' %}:
                                 {{ comment.text }}
                             </p>
                             <p>
                             <form method="post">
                                 {% csrf_token %}
                                 <input type="hidden" name="agree" value="{{ comment.pk }}"/>
-                                <input type="submit" value="Принять">
+                                <input type="submit" value="{% trans 'Принять' %}">
                             </form>
                             <form method="post">
                                 {% csrf_token %}
                                 <input type="hidden" name="decline" value="{{ comment.pk }}"/>
-                                <input type="submit" value="Отклонить">
+                                <input type="submit" value="{% trans 'Отклонить' %}">
                             </form>
                         </div>
                     </div>

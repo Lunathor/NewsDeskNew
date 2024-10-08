@@ -1,13 +1,14 @@
 {% extends 'flatpages/default.html' %}
+{% load i18n %}
 {% load custom_filters %}
 {% load custom_tags %}
 {% load embed_video_tags %}
 {% block title %}
-Объвление
+{% trans 'Объвление' %}
 {% endblock title %}
 {% block content %}
-    <h1>{{ post.title }}</h1>
-    <h2>{{ post.datecreation|date:'d M Y' }}</h2>
+    <h1>{% trans 'Заголовок' %}: {{ post.title }}</h1>
+    <h2>{% trans 'Дата' %}: {{ post.datecreation|date:'d M Y' }}</h2>
     {% if post|is_image_exist %}
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -20,17 +21,21 @@
     {% if post|is_video_exist %}
         <div class="container px-4 px-lg-5 mt-5 justify-content-center">
             <div class="row gx-4 gx-lg-3 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
+                <p>{% trans 'Видео' %}</p>
                 {% for vid in post|get_video %}
                     {% video vid.url "640x360" %}
                 {% endfor %}
             </div>
         </div>
     {% endif %}
-    <p>{{ post.text }}</p>
+    <p>
+        {% trans 'Содержание' %}:
+        {{ post.text }}
+    </p>
     <div class="container px-4 px-lg-5">
         <div class="text-center">
             <h1>
-                Комментарии
+                {% trans 'Комментарии' %}
             </h1>
         </div>
     </div>
@@ -42,7 +47,7 @@
                     <textarea name="text" style="height: 200px; width: 600px; outline: 5px black solid"></textarea>
                 </div>
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 mt-3 justify-content-center">
-                    <button type="submit">Отправить</button>
+                    <button type="submit">{% trans 'Отправить' %}</button>
                 </div>
             </div>
         </form>
@@ -54,13 +59,15 @@
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 mt-3 justify-content-center">
                     <div class="card h-100" style="height: 200px; width: 1000px; outline: 5px black solid;">
                         <p>
-                            Пользователь:
+                            {% trans 'Пользователь' %}:
                             {{ comment.author }}
                         </p>
                         <p>
+                            {% trans 'Дата' %}:
                             {{ comment.datecreation }}
                         </p>
                         <p>
+                            {% trans 'Содержание' %}:
                             {{ comment.text }}
                         </p>
                     </div>

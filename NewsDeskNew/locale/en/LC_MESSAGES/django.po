@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-08 15:43+0300\n"
+"POT-Creation-Date: 2024-10-09 00:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "Author of the Post"
 msgid "Категория поста"
 msgstr "Category of the Post"
 
-#: .\desk\models.py:57
+#: .\desk\models.py:57 .\templates\MainPage.html:14
 msgid "Картинка"
 msgstr "Image"
 
@@ -54,9 +54,88 @@ msgstr "Author of the Comment"
 msgid "Содержание комментария"
 msgstr "Text of the Comment"
 
+#: .\templates\Create.html:14
+msgid "Добавить пост"
+msgstr "Create post"
+
+#: .\templates\Create.html:42
+msgid "Добавить изображение"
+msgstr "Add Image"
+
+#: .\templates\Create.html:46
+msgid "Изображение"
+msgstr "Image"
+
+#: .\templates\Create.html:47 .\templates\Create.html:91
+msgid "Удаление"
+msgstr "Delete"
+
+#: .\templates\Create.html:61 .\templates\Create.html:105
+#: .\templates\Delete.html:13 .\templates\MainPage.html:38
+msgid "Удалить"
+msgstr "Delete"
+
+#: .\templates\Create.html:68 .\templates\Create.html:112
+msgid "Добавить"
+msgstr "Add"
+
+#: .\templates\Create.html:86
+msgid "Добавить видео"
+msgstr "Add Video"
+
+#: .\templates\Create.html:90 .\templates\PostReview.html:24
+msgid "Видео"
+msgstr "Video"
+
+#: .\templates\Create.html:116
+msgid "Подтвердить"
+msgstr "Create"
+
+#: .\templates\Delete.html:9 .\templates\Delete.html:12
+msgid "Удаляем пост"
+msgstr "Delete post"
+
+#: .\templates\MainPage.html:10
+msgid "Все объявления"
+msgstr "All posts"
+
+#: .\templates\MainPage.html:15 .\templates\PostReview.html:10
+msgid "Заголовок"
+msgstr "Title"
+
+#: .\templates\MainPage.html:16
+msgid "Дата публикации"
+msgstr "Date of publication"
+
+#: .\templates\MainPage.html:17 .\templates\PostReview.html:32
+#: .\templates\Postman.html:16 .\templates\PersonalCabinet.html:74
+#: .\templates\PostReview.html:70
+msgid "Содержание"
+msgstr "Text"
+
+#: .\templates\MainPage.html:18
+msgid "Действия"
+msgstr "Actions"
+
+#: .\templates\MainPage.html:33
+msgid "Детали"
+msgstr "Details"
+
+#: .\templates\MainPage.html:35
+msgid "Изменить"
+msgstr "Update"
+
+#: .\templates\MainPage.html:45
+msgid "Новостей нет!"
+msgstr "Posts doesn't exist"
+
 #: .\templates\PersonalCabinet.html:8
 msgid "Личный кабинет"
 msgstr "Personal Cabinet"
+
+#: .\templates\PersonalCabinet.html:11
+msgid "Получать новости о нас"
+msgstr "Receive news about us"
 
 #: .\templates\PersonalCabinet.html:16
 msgid "Отписаться"
@@ -65,3 +144,64 @@ msgstr "Unsubscribe"
 #: .\templates\PersonalCabinet.html:22
 msgid "Подписаться"
 msgstr "Subscribe"
+
+#: .\templates\PersonalCabinet.html:27
+msgid "Уведомления об откликах"
+msgstr "Notification about new Comments"
+
+#: .\templates\PersonalCabinet.html:32
+msgid "Не получать"
+msgstr "Don't Receive"
+
+#: .\templates\PersonalCabinet.html:38
+msgid "Получать"
+msgstr "Receive"
+
+#: .\templates\PersonalCabinet.html:44
+msgid "Новостная рассылка"
+msgstr "News"
+
+#: .\templates\PersonalCabinet.html:51
+msgid "Выход"
+msgstr "Exit"
+
+#: .\templates\PersonalCabinet.html:55 .\templates\PostReview.html:38
+msgid "Комментарии"
+msgstr "Comments"
+
+#: .\templates\PersonalCabinet.html:66 .\templates\PostReview.html:62
+msgid "Пользователь"
+msgstr "User"
+
+#: .\templates\PersonalCabinet.html:70 .\templates\PostReview.html:11
+#: .\templates\PostReview.html:66
+msgid "Дата"
+msgstr "Date"
+
+#: .\templates\PersonalCabinet.html:81
+msgid "Принять"
+msgstr "Argee"
+
+#: .\templates\PersonalCabinet.html:86
+msgid "Отклонить"
+msgstr "Decline"
+
+#: .\templates\PostReview.html:7
+msgid "Объвление"
+msgstr "Post"
+
+#: .\templates\PostReview.html:50
+msgid "Отправить"
+msgstr "Send"
+
+#: .\templates\Postman.html:4 .\templates\Postman.html:7
+msgid "Почтальон"
+msgstr "Postman"
+
+#: .\templates\Postman.html:12
+msgid "Тема"
+msgstr "Theme"
+
+#: .\templates\Postman.html:20
+msgid "Разослать"
+msgstr "Send"

@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Хочу попробовать сделать локализацию для англичан">
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Стартанула локализация, теперь надо сделать ее на всех шаблонах и сделать в основном шаблоне navbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/flatpages/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PostReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PostReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/Postman.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/Postman.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728389625035</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Стартанула локализация, теперь надо сделать ее на всех шаблонах и сделать в основном шаблоне navbar">
+      <option name="closed" value="true" />
+      <created>1728391778385</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1728391778385</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,7 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Так поправил функции в views.py чтобы они потом смогли встать в ссылки и добавил новое приложение accounts" />
     <MESSAGE value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
     <MESSAGE value="Ссылки для шаблонов Delete.html и Create.html" />
     <MESSAGE value="Создан шаблон создания и редактирования поста, на чем была изменена PostForm дабы все было чуть логичнее сначала категория, а потом текст&#10;Создан шаблон удаления&#10;И иные мелкие изменения" />
@@ -475,6 +483,7 @@
     <MESSAGE value="Поправил отображение пустой картинки в MainPage.html" />
     <MESSAGE value="Добавлена функция почтальон в accounts/views.py Которая будет совершать рассылку пользователям" />
     <MESSAGE value="Хочу попробовать сделать локализацию для англичан" />
-    <option name="LAST_COMMIT_MESSAGE" value="Хочу попробовать сделать локализацию для англичан" />
+    <MESSAGE value="Стартанула локализация, теперь надо сделать ее на всех шаблонах и сделать в основном шаблоне navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Стартанула локализация, теперь надо сделать ее на всех шаблонах и сделать в основном шаблоне navbar" />
   </component>
 </project>

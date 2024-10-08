@@ -1,6 +1,8 @@
 {% extends 'flatpages/default.html' %}
+{% load i18n %}
 {% load custom_filters %}
 {% load custom_tags %}
+
 {% block title %}
     Создание/Редактирование поста
 {% endblock title %}
@@ -9,7 +11,7 @@
     {% csrf_token %}
     <div class="card">
         <div class="card-header card-header-secondary">
-            <h4 class="card-title">Добавить пост</h4>
+            <h4 class="card-title">{% trans 'Добавить пост' %}</h4>
         </div>
         {% for field in form %}
             <div class="form-group card-body">
@@ -37,12 +39,12 @@
         </script>
         <div class="table-responsive card mt-4">
             <div class="card-header card-header-secondary">
-                <h4 class="card-title">Добавить изображение</h4>
+                <h4 class="card-title">{% trans 'Добавить изображение' %}</h4>
             </div>
             <table class="table card-body">
                 <thead class="text-secondary">
-                    <th>Изображение <span class="required">*</span></th>
-                    <th>Удаление</th>
+                    <th>{% trans 'Изображение' %} <span class="required">*</span></th>
+                    <th>{% trans 'Удаление' %}</th>
                 </thead>
                 <tbody id="item-images">
                     {% for formss in formset %}
@@ -56,14 +58,14 @@
                             {% endfor %}
                             {% if formss.instance.pk %}
                                 <td>
-                                    <a class="btn btn-danger" href="{% url 'delete_image' formss.instance.pk %}">Удалить</a>
+                                    <a class="btn btn-danger" href="{% url 'delete_image' formss.instance.pk %}">{% trans 'Удалить' %}</a>
                                 </td>
                             {% endif %}
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
-            <a href="#" id="add-image-button" class="btn btn-secondary add-images">Добавить</a>
+            <a href="#" id="add-image-button" class="btn btn-secondary add-images">{% trans 'Добавить' %}</a>
         </div>
     {% endwith %}
     {% with named_formsets.video as formset %}
@@ -81,12 +83,12 @@
         </script>
         <div class="table-responsive card mt-4">
             <div class="card-header card-header-secondary">
-                <h4 class="card-title">Добавить видео</h4>
+                <h4 class="card-title">{% trans 'Добавить видео' %}</h4>
             </div>
             <table class="table card-body">
                 <thead class="text-secondary">
-                    <th>Видео <span class="required">*</span></th>
-                    <th>Удаление</th>
+                    <th>{% trans 'Видео' %} <span class="required">*</span></th>
+                    <th>{% trans 'Удаление' %}</th>
                 </thead>
                 <tbody id="item-video">
                     {% for formss in formset %}
@@ -100,18 +102,18 @@
                             {% endfor %}
                             {% if formss.instance.pk %}
                                 <td>
-                                    <a class="btn btn-danger" href="{% url 'delete_video' formss.instance.pk %}">Удалить</a>
+                                    <a class="btn btn-danger" href="{% url 'delete_video' formss.instance.pk %}">{% trans 'Удалить' %}</a>
                                 </td>
                             {% endif %}
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
-            <a href="#" id="add-video-button" class="btn btn-secondary add-video">Добавить</a>
+            <a href="#" id="add-video-button" class="btn btn-secondary add-video">{% trans 'Добавить' %}</a>
         </div>
     {% endwith %}
     <div class="form-group">
-            <button type="submit" class="btn btn-secondary btn-block">Подтвердить</button>
+            <button type="submit" class="btn btn-secondary btn-block">{% trans 'Подтвердить' %}</button>
         </div>
 </form>
 {% endblock content %}
