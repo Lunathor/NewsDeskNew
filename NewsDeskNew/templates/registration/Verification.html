@@ -7,7 +7,7 @@
 <form method="post">
         {% csrf_token %}
         <div>
-            <p>Введите код отправленный на почту {{ user }}:</p>
+            <p>Введите код отправленный на почту {{ user.email }}:</p>
         </div>
         <div>
             <input type="text" name="email_conf_code" placeholder="Код подтверждения" required>
