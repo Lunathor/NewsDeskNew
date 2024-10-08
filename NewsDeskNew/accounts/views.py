@@ -110,3 +110,13 @@ def Verification(request, user_id=None):
             msg = 'Проверьте правильность кода'
             return render(request, 'registration/Verification.html', {'error': msg, 'user': user})
     return render(request, 'registration/Verification.html', {'user': user})
+
+
+@staff_member_required
+def Postman(request):
+    if request.method == "POST":
+        msg_title_of_post = request.POST['msg_title_of_post']
+        msg_text_of_post = request.POST['msg_text_of_post']
+        postman(msg_title_of_post=msg_title_of_post, msg_text_of_post=msg_text_of_post)
+        return redirect('PersonalCabinet')
+    return render(request, 'Postman.html')

@@ -8,4 +8,5 @@ urlpatterns = [
     path('personalcabinet/', PersonalCabinetView.as_view(), name='PersonalCabinet'),
     path('user/', include('django.contrib.auth.urls')),
     path('user/logout/', Logout, name='Logout'),
+    path('postman/', Postman, name='Postman'),
 ]

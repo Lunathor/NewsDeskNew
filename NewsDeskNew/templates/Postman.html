@@ -1,0 +1,23 @@
+{% extends 'flatpages/default.html' %}
+{% block title %}
+Почтальон
+{% endblock title %}
+{% block content %}
+<h1>Почтальон</h1>
+<form>
+    {% csrf_token %}
+    <div class="container">
+        <div>
+            <p>Тема:</p>
+            <input type="text" name="msg_title_of_post"/>
+        </div>
+        <div>
+            <p>Содержание:</p>
+            <input type="text" name="msg_text_of_post"/>
+        </div>
+        <div>
+            <button type="submit">Разослать</button>
+        </div>
+    </div>
+</form>
+{% endblock content %}
