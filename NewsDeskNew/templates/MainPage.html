@@ -23,7 +23,7 @@
                 <td>{% if post|is_image_exist %}
                         <img class="card-img-top" src="{{ post|preview }}"/>
                     {% else %}
-                        <img class="card-img-top" src={% static 'images/empty.jpg' %} />
+                        <img class="card-img-top" src={% static 'img/empty.jpg' %} />
                     {% endif %}
                 </td>
                 <td>{{ post.title}}</td>

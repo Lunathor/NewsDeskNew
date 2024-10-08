@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Мелкие изменения">
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Поправил все маленькие ошибки связанные с личным кабинетом, которые нашел">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -389,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728384108002</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Поправил все маленькие ошибки связанные с личным кабинетом, которые нашел">
+      <option name="closed" value="true" />
+      <created>1728385021847</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1728385021847</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +413,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="MainPage template for PostListView and some custom tags and filters for that" />
     <MESSAGE value="PostReview template some filters for it and models added to admin.py" />
     <MESSAGE value="Шаблон и фильтры то сделал но почему то в urls.py не видит импорт post_review задал вопрос ментору пока буду делать другие шаблоны" />
     <MESSAGE value="Сделал ссылки нужные в шаблонах дальше буду допиливать шаблоны и создам приложение для регистрации accounts" />
@@ -430,6 +437,7 @@
     <MESSAGE value="msg" />
     <MESSAGE value="Переделал базу данных после краша снова проверяем на работоспособность приложение" />
     <MESSAGE value="Мелкие изменения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Мелкие изменения" />
+    <MESSAGE value="Поправил все маленькие ошибки связанные с личным кабинетом, которые нашел" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поправил все маленькие ошибки связанные с личным кабинетом, которые нашел" />
   </component>
 </project>
