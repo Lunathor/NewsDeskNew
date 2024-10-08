@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.db.models import ForeignKey
 from embed_video.fields import EmbedVideoField
+from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 
@@ -34,10 +35,10 @@ class User(AbstractUser):
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=200, verbose_name='Заголовок поста')
-    text = models.TextField(verbose_name='Содержание поста')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор поста')
-    category = models.CharField(max_length=2, choices=CATEGORY_CHOICE, verbose_name='Категория поста')
+    title = models.CharField(max_length=200, verbose_name=_('Заголовок поста'))
+    text = models.TextField(verbose_name=_('Содержание поста'))
+    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_('Автор поста'))
+    category = models.CharField(max_length=2, choices=CATEGORY_CHOICE, verbose_name=_('Категория поста'))
     datecreation = models.DateTimeField(auto_now_add=True)
     
     def preview(self):
@@ -53,19 +54,19 @@ class Post(models.Model):
     
     
 class Image(models.Model):
-    file = models.ImageField(upload_to='desk/gallery/images', verbose_name='Картинка')
-    post = ForeignKey(Post, on_delete=models.CASCADE, verbose_name='Пост')
+    file = models.ImageField(upload_to='desk/gallery/images', verbose_name=_('Картинка'))
+    post = ForeignKey(Post, on_delete=models.CASCADE, verbose_name=_('Пост'))
     
     
 class Video(models.Model):
-    url = EmbedVideoField(verbose_name="Ссылка на Видео")
-    post = ForeignKey(Post, on_delete=models.CASCADE, verbose_name='Пост')
+    url = EmbedVideoField(verbose_name=_("Ссылка на Видео"))
+    post = ForeignKey(Post, on_delete=models.CASCADE, verbose_name=_('Пост'))
     
     
 class Comment(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, verbose_name='Пост')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор комментария')
-    text = models.TextField(verbose_name='Содержание комментария')
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, verbose_name=_('Пост'))
+    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_('Автор комментария'))
+    text = models.TextField(verbose_name=_('Содержание комментария'))
     datecreation = models.DateTimeField(auto_now_add=True)
     is_confirmed = models.BooleanField(default=False, verbose_name='Подтвержденный комментарий')
     

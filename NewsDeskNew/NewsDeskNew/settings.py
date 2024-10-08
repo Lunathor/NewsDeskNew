@@ -32,6 +32,7 @@ SITE_URL = 'http://127.0.0.1:8000'
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

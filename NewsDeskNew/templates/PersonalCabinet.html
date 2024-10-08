@@ -5,7 +5,7 @@
 Личный кабинет
 {% endblock title %}
 {% block content %}
-<h1>{% trans Личный кабинет %}: {{ user.username }}</h1>
+<h1>{% trans 'Личный кабинет' %}: {{ user.username }}</h1>
 <div class="container">
     <div>
         <p>Получать новости о нас</p>
@@ -13,13 +13,13 @@
         <form method="post">
             {% csrf_token %}
             <input type="hidden" name="about_unsub" value="{{ user.pk }}"/>
-            <input type="submit" value="Отписаться">
+            <input type="submit" value="{% trans 'Отписаться' %}">
         </form>
         {% else %}
         <form method="post">
             {% csrf_token %}
             <input type="hidden" name="about_sub" value="{{ user.pk }}"/>
-            <input type="submit" value="Подписаться">
+            <input type="submit" value="{% trans 'Подписаться' %}">
         </form>
         {% endif %}
     </div>

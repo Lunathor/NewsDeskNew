@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-08 15:43+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\desk\models.py:38
+msgid "Заголовок поста"
+msgstr "Title of the Post"
+
+#: .\desk\models.py:39
+msgid "Содержание поста"
+msgstr "Text of the Post"
+
+#: .\desk\models.py:40
+msgid "Автор поста"
+msgstr "Author of the Post"
+
+#: .\desk\models.py:41
+msgid "Категория поста"
+msgstr "Category of the Post"
+
+#: .\desk\models.py:57
+msgid "Картинка"
+msgstr "Image"
+
+#: .\desk\models.py:58 .\desk\models.py:63 .\desk\models.py:67
+msgid "Пост"
+msgstr "Post"
+
+#: .\desk\models.py:62
+msgid "Ссылка на Видео"
+msgstr "Link to Video"
+
+#: .\desk\models.py:68
+msgid "Автор комментария"
+msgstr "Author of the Comment"
+
+#: .\desk\models.py:69
+msgid "Содержание комментария"
+msgstr "Text of the Comment"
+
+#: .\templates\PersonalCabinet.html:8
+msgid "Личный кабинет"
+msgstr "Personal Cabinet"
+
+#: .\templates\PersonalCabinet.html:16
+msgid "Отписаться"
+msgstr "Unsubscribe"
+
+#: .\templates\PersonalCabinet.html:22
+msgid "Подписаться"
+msgstr "Subscribe"
