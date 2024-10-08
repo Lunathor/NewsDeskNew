@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Добавлена функция почтальон в accounts/views.py Которая будет совершать рассылку пользователям">
+    <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Хочу попробовать сделать локализацию для англичан">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728386505966</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Хочу попробовать сделать локализацию для англичан">
+      <option name="closed" value="true" />
+      <created>1728387850746</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1728387850746</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -429,7 +435,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Сделал ссылки нужные в шаблонах дальше буду допиливать шаблоны и создам приложение для регистрации accounts" />
     <MESSAGE value="Так поправил функции в views.py чтобы они потом смогли встать в ссылки и добавил новое приложение accounts" />
     <MESSAGE value="Почистил импорты в desk\views.py перенес не нужное с местный представлениях в представления приложения accounts" />
     <MESSAGE value="Ссылки для шаблонов Delete.html и Create.html" />
@@ -454,6 +459,7 @@
     <MESSAGE value="Поправил все маленькие ошибки связанные с личным кабинетом, которые нашел" />
     <MESSAGE value="Поправил отображение пустой картинки в MainPage.html" />
     <MESSAGE value="Добавлена функция почтальон в accounts/views.py Которая будет совершать рассылку пользователям" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена функция почтальон в accounts/views.py Которая будет совершать рассылку пользователям" />
+    <MESSAGE value="Хочу попробовать сделать локализацию для англичан" />
+    <option name="LAST_COMMIT_MESSAGE" value="Хочу попробовать сделать локализацию для англичан" />
   </component>
 </project>
