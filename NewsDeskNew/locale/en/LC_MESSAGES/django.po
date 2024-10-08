@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 00:33+0300\n"
+"POT-Creation-Date: 2024-10-09 00:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,13 @@ msgstr "Video"
 msgid "Подтвердить"
 msgstr "Create"
 
-#: .\templates\Delete.html:9 .\templates\Delete.html:12
+#: .\templates\Delete.html:9
+#, fuzzy
+#| msgid "Удаляем пост"
+msgid "Удаление поста"
+msgstr "Delete post"
+
+#: .\templates\Delete.html:12
 msgid "Удаляем пост"
 msgstr "Delete post"
 
@@ -107,9 +113,9 @@ msgstr "Title"
 msgid "Дата публикации"
 msgstr "Date of publication"
 
-#: .\templates\MainPage.html:17 .\templates\PostReview.html:32
-#: .\templates\Postman.html:16 .\templates\PersonalCabinet.html:74
-#: .\templates\PostReview.html:70
+#: .\templates\MainPage.html:17 .\templates\PersonalCabinet.html:74
+#: .\templates\PostReview.html:32 .\templates\PostReview.html:70
+#: .\templates\Postman.html:16
 msgid "Содержание"
 msgstr "Text"
 
@@ -180,14 +186,14 @@ msgstr "Date"
 
 #: .\templates\PersonalCabinet.html:81
 msgid "Принять"
-msgstr "Argee"
+msgstr "Agree"
 
 #: .\templates\PersonalCabinet.html:86
 msgid "Отклонить"
 msgstr "Decline"
 
 #: .\templates\PostReview.html:7
-msgid "Объвление"
+msgid "Объявление"
 msgstr "Post"
 
 #: .\templates\PostReview.html:50
