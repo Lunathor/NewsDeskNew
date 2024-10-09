@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="286f2a47-8026-427c-ba37-e1f188f6189d" name="Changes" comment="Локализация на английский">
-      <change afterPath="$PROJECT_DIR$/NewsDeskNew/desk/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/NewsDeskNew/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/desk/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/locale/en/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/PersonalCabinet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/flatpages/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/flatpages/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Verification.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/Verification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsDeskNew/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsDeskNew/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,14 +66,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727950994235</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Project started, App &quot;NewsDeskNew&quot; initiated, settings, first model User">
-      <option name="closed" value="true" />
-      <created>1727952776293</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1727952776293</updated>
     </task>
     <task id="LOCAL-00002" summary="Project started, App &quot;NewsDeskNew&quot; initiated, settings, first model User">
       <option name="closed" value="true" />
@@ -458,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728424912572</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Локализация на английский">
+      <option name="closed" value="true" />
+      <created>1728427419859</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1728427419859</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

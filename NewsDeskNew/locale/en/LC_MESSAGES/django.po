@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 01:29+0300\n"
+"POT-Creation-Date: 2024-10-10 00:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,7 +83,7 @@ msgid "Удаление"
 msgstr "Delete"
 
 #: .\templates\Create.html:61 .\templates\Create.html:105
-#: .\templates\Delete.html:13 .\templates\MainPage.html:38
+#: .\templates\Delete.html:13 .\templates\MainPage.html:37
 msgid "Удалить"
 msgstr "Delete"
 
@@ -99,7 +99,8 @@ msgstr "Add Video"
 msgid "Видео"
 msgstr "Video"
 
-#: .\templates\Create.html:116
+#: .\templates\Create.html:116 .\templates\registration\Verification.html:17
+#: .\templates\registration\login.html:24
 msgid "Подтвердить"
 msgstr "Create"
 
@@ -112,10 +113,6 @@ msgstr "Delete post"
 #: .\templates\Delete.html:12
 msgid "Удаляем пост"
 msgstr "Delete post"
-
-#: .\templates\MainPage.html:7
-msgid "Объявления"
-msgstr "Posts"
 
 #: .\templates\MainPage.html:10
 msgid "Все объявления"
@@ -139,19 +136,15 @@ msgstr "Text"
 msgid "Действия"
 msgstr "Actions"
 
-#: .\templates\MainPage.html:33
+#: .\templates\MainPage.html:32
 msgid "Детали"
 msgstr "Details"
 
-#: .\templates\MainPage.html:35
+#: .\templates\MainPage.html:34
 msgid "Изменить"
 msgstr "Update"
 
-#: .\templates\MainPage.html:45
-msgid "Новостей нет!"
-msgstr "Posts doesn't exist"
-
-#: .\templates\PersonalCabinet.html:8
+#: .\templates\PersonalCabinet.html:8 .\templates\flatpages\default.html:37
 msgid "Личный кабинет"
 msgstr "Personal Cabinet"
 
@@ -187,9 +180,9 @@ msgstr "News"
 msgid "Выход"
 msgstr "Exit"
 
-#: .\templates\PersonalCabinet.html:55 .\templates\PostReview.html:38
-msgid "Комментарии"
-msgstr "Comments"
+#: .\templates\PersonalCabinet.html:55
+msgid "Новые комментарии"
+msgstr "New comments"
 
 #: .\templates\PersonalCabinet.html:66 .\templates\PostReview.html:62
 msgid "Пользователь"
@@ -212,6 +205,10 @@ msgstr "Decline"
 msgid "Объявление"
 msgstr "Post"
 
+#: .\templates\PostReview.html:38
+msgid "Комментарии"
+msgstr "Comments"
+
 #: .\templates\PostReview.html:50
 msgid "Отправить"
 msgstr "Send"
@@ -227,3 +224,89 @@ msgstr "Theme"
 #: .\templates\Postman.html:20
 msgid "Разослать"
 msgstr "Send"
+
+#: .\templates\flatpages\default.html:20
+msgid "Доска Объявлений"
+msgstr "News desk"
+
+#: .\templates\flatpages\default.html:24
+msgid "Главная"
+msgstr "Main page"
+
+#: .\templates\flatpages\default.html:27
+#: .\templates\registration\SignUp.html:38
+msgid "Войти"
+msgstr "Login"
+
+#: .\templates\flatpages\default.html:32 .\templates\registration\SignUp.html:4
+#: .\templates\registration\SignUp.html:7
+#: .\templates\registration\login.html:30
+msgid "Регистрация"
+msgstr "Sign Up"
+
+#: .\templates\registration\SignUp.html:12
+#: .\templates\registration\SignUp.html:13
+#: .\templates\registration\login.html:12
+msgid "Почта"
+msgstr "Email"
+
+#: .\templates\registration\SignUp.html:16
+#: .\templates\registration\SignUp.html:17
+msgid "Имя пользователя"
+msgstr "Username"
+
+#: .\templates\registration\SignUp.html:20
+#: .\templates\registration\SignUp.html:21
+#: .\templates\registration\login.html:18
+msgid "Пароль"
+msgstr "Password"
+
+#: .\templates\registration\SignUp.html:24
+msgid "Повторный пароль"
+msgstr "Repeat the password"
+
+#: .\templates\registration\SignUp.html:25
+msgid "Подтверждение пароля"
+msgstr "Confirm password"
+
+#: .\templates\registration\SignUp.html:28
+msgid "Новостная подписка"
+msgstr "News subscription"
+
+#: .\templates\registration\SignUp.html:32
+msgid "Создать аккаунт"
+msgstr "Sign up"
+
+#: .\templates\registration\SignUp.html:37
+msgid "Уже есть аккаунт?"
+msgstr "Already have account?"
+
+#: .\templates\registration\Verification.html:4
+msgid "Верификация"
+msgstr "Verification"
+
+#: .\templates\registration\Verification.html:7
+msgid "Подтверждение аккаунта"
+msgstr "Account Verification"
+
+#: .\templates\registration\Verification.html:11
+msgid "Введите код отправленный на почту"
+msgstr "Write confirmation code from"
+
+#: .\templates\registration\Verification.html:14
+msgid "Код подтверждения"
+msgstr "Confirmation code"
+
+#: .\templates\registration\login.html:4 .\templates\registration\login.html:7
+msgid "Вход"
+msgstr "Login"
+
+#: .\templates\registration\login.html:29
+msgid "Еще нет аккаунта?"
+msgstr "Don't have account yet?"
+
+#~ msgid "Объявления"
+#~ msgstr "Posts"
+
+#~ msgid "Новостей нет!"
+#~ msgstr "Posts doesn't exist"

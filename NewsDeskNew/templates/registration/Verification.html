@@ -1,19 +1,20 @@
 {% extends 'flatpages/default.html' %}
+{% load i18n %}
 {% block title %}
-Верификация
+{% trans 'Верификация' %}
 {% endblock title %}
 {% block content %}
-<h1>Подтверждение аккаунта</h1>
+<h1>{% trans 'Подтверждение аккаунта' %}</h1>
 <form method="post">
         {% csrf_token %}
         <div>
-            <p>Введите код отправленный на почту {{ user.email }}:</p>
+            <p>{% trans 'Введите код отправленный на почту' %} {{ user.email }}:</p>
         </div>
         <div>
-            <input type="text" name="email_conf_code" placeholder="Код подтверждения" required>
+            <input type="text" name="email_conf_code" placeholder="{% trans 'Код подтверждения' %}" required>
         </div>
         <div>
-            <button type="submit">Подтвердить</button>
+            <button type="submit">{% trans 'Подтвердить' %}</button>
         </div>
     </form>
 {% endblock content %}

@@ -1,31 +1,32 @@
 {% extends 'flatpages/default.html' %}
+{% load i18n %}
 {% block title %}
-Вход
+{% trans 'Вход' %}
 {% endblock title %}
 {% block content %}
-<h1>Вход</h1>
+<h1>{% trans 'Вход' %}</h1>
 <form action="{% url 'login' %}" method="post">
     {% csrf_token %}
     <div class="container">
         <div>
-            <a>Почта</a>
+            <a>{% trans 'Почта' %}</a>
             <div>
                 {{ form.username }}
             </div>
         </div>
         <div>
-            <a>Пароль</a>
+            <a>{% trans 'Пароль' %}</a>
             <div>
                 {{ form.password }}
             </div>
         </div>
         <div>
-            <button type="submit">Подтвердить</button>
+            <button type="submit">{% trans 'Подтвердить' %}</button>
         </div>
     </div>
 </form>
 <div>
-    <p>Еще нет аккаунта?</p>
-    <a class="button" href="{% url 'SignUp' %}">Войти</a>
+    <p>{% trans 'Еще нет аккаунта?' %}</p>
+    <a class="button" href="{% url 'SignUp' %}">{% trans 'Регистрация' %}</a>
 </div>
 {% endblock content %}

@@ -1,39 +1,40 @@
 {% extends 'flatpages/default.html' %}
+{% load i18n %}
 {% block title %}
-Регистрация
+{% trans 'Регистрация' %}
 {% endblock title %}
 {% block content %}
-<h1>Регистрация</h1>
+<h1>{% trans 'Регистрация' %}</h1>
 <form method="post">
     {% csrf_token %}
     <div class="container">
         <div>
-            <p>Почта:</p>
-            <input type="email" name="email" placeholder="Почта" required>
+            <p>{% trans 'Почта' %}:</p>
+            <input type="email" name="email" placeholder="{% trans 'Почта' %}" required>
         </div>
         <div>
-            <p>Имя пользователя:</p>
-            <input type="text" name="username" placeholder="Имя пользователя" required>
+            <p>{% trans 'Имя пользователя' %}:</p>
+            <input type="text" name="username" placeholder="{% trans 'Имя пользователя' %}" required>
         </div>
         <div>
-            <p>Пароль:</p>
-            <input type="password" name="password1" placeholder="Пароль" required>
+            <p>{% trans 'Пароль' %}:</p>
+            <input type="password" name="password1" placeholder="{% trans 'Пароль' %}" required>
         </div>
         <div>
-            <p>Повторный пароль:</p>
-            <input type="password" name="password2" placeholder="Подтверждение пароля" required>
+            <p>{% trans 'Повторный пароль' %}:</p>
+            <input type="password" name="password2" placeholder="{% trans 'Подтверждение пароля' %}" required>
         </div>
         <div>
-            <p>Новостная подписка:</p>
+            <p>{% trans 'Новостная подписка' %}:</p>
             <input type="checkbox" name="about_sub" checked>
         </div>
         <div>
-            <button type="submit">Создать аккаунт</button>
+            <button type="submit">{% trans 'Создать аккаунт' %}</button>
         </div>
     </div>
 </form>
 <div>
-    <p>Уже есть аккаунт?</p>
-    <a class="button" href="{% url 'login' %}">Войти</a>
+    <p>{% trans 'Уже есть аккаунт?' %}</p>
+    <a class="button" href="{% url 'login' %}">{% trans 'Войти' %}</a>
 </div>
 {% endblock content %}
